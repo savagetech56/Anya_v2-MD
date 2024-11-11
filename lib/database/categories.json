@@ -1,4 +1,9 @@
 {
+  "nsfw": {
+    "cateSymbol": "🔞",
+    "pluginSymbol": "💦",
+    "desc": "Not safe for work, usually pornographical contents command"
+  },
   "core": {
     "cateSymbol": "💻",
     "pluginSymbol": "🌀",
