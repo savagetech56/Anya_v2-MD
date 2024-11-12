@@ -1,5 +1,6 @@
 #FROM node:lts-buster
 FROM cimg/node:18.0
+USER root
 
 RUN apt-get update && \
     apt-get install -y ffmpeg webp git && \
