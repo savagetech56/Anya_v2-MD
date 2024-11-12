@@ -1,5 +1,5 @@
 #FROM node:lts-buster
-FROM docker.io/node:18-buster
+FROM cimg/node:18.0
 
 RUN apt-get update && \
     apt-get install -y ffmpeg webp git && \
