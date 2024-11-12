@@ -1,5 +1,5 @@
 #FROM node:lts-buster
-FROM ghcr.io/library/node:lts-buster
+FROM docker.io/node:18-buster
 
 RUN apt-get update && \
     apt-get install -y ffmpeg webp git && \
