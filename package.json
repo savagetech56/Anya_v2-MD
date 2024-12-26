@@ -35,6 +35,7 @@
     "@queenanya/invite": "latest",
     "@bochilteam/scraper": "latest",
     "@babel/parser": "^7.24.8",
+    "@hapi/boom": "latest",
     "yt-search": "latest",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^1.7.2",
