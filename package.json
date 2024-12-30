@@ -34,6 +34,7 @@
     "@queenanya/baileys": "latest",
     "@queenanya/invite": "latest",
     "@bochilteam/scraper": "latest",
+    "@distube/ytdl-core": "^4.15.8",
     "@babel/parser": "^7.24.8",
     "@hapi/boom": "latest",
     "yt-search": "latest",
