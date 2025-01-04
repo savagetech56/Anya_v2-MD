@@ -6,9 +6,11 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start2": "node index",
-    "start": "pm2 start index.js --attach --name anya-v2 --namespace production",
-    "stop": "pm2 stop anya-v2 --namespace production"
+    "start": "node handler",
+    "stop": "pkill -f 'node handler'",
+    "start-pm2": "pm2 start index.js --attach --name anya-v2 --namespace production",
+    "stop-pm2": "pm2 stop anya-v2 --namespace production",
+    "restart-pm2": "pm2 restart anya-v2 --namespace production"
   },
   "keywords": [
     "termux",
