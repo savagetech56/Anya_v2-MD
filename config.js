@@ -65,6 +65,7 @@ module.exports = {
         banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
     },
     Port: process.env.Port || "8080",
+    HEART_RATE: process.env.HEART_RATE || 15,
 }
 
 global.connectionMessageSent = false;
