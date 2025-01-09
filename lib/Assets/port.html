@@ -1,36 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glowing Text</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: black;
-            color: white;
-        }
-        .glow {
-            font-size: 2em;
-            color: white;
-            text-align: center;
-            animation: glow 1s ease-in-out infinite alternate;
-        }
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white;
-            }
-            to {
-                text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white, 0 0 80px white;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queen Anya v2 Running...</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #000000, #3a3a3a);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.1) 2px,
+          transparent 2px,
+          transparent 40px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.1) 2px,
+          transparent 2px,
+          transparent 40px
+        );
+      filter: blur(3px);
+      opacity: 0.6;
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 30px;
+      margin: 0;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      border-top: 0.5px solid white;
+      padding: 5px;
+      font-family: 'Playwrite RO Guides', cursive;
+      font-size: 12px;
+      color: white;
+      z-index: 2;
+    }
+  </style>
 </head>
 <body>
-    <div class="glow">Hello! From PikaBotz..!</div>
+  <div class="background"></div>
+  <div class="content">
+    <h1>Thanks For Using,<br>Queen Anya v2!</h1>
+  </div>
+  <footer>
+    @PikaBotz Inc.
+  </footer>
 </body>
 </html>
