@@ -1,4 +1,4 @@
-const { readFileSync } = require('fs')
+I'mconst { readFileSync } = require('fs')
 require('dotenv').config({path: './mongo.env'});
 require('dotenv').config({path: './owner.env'});
 require('dotenv').config({path: './session.env'});
@@ -29,7 +29,7 @@ module.exports = {
     groupLink: process.env.GcLink || "https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX",
     warns: Number(process.env.Warn_Limits) || 3,
     cooldown: Number(process.env.Cooldown_Timer_Seconds) || 5, // default cooldown time per command in seconds
-    mongoUrl: process.env.MongoDB || "YOUR_MONGODB_URL",
+    mongoUrl: process.env.MongoDB || "postgresql://toxic_h0a0_user:Aos9RlUZtZVUosD3kaAR0QCNImzvOL2m@dpg-cu03gtij1k6c73dut29g-a.oregon-postgres.render.com/toxic_h0a0",
     sessionId: process.env.SESSION_ID || "AIZBfrF8m_A_N_Y_A_V_2_IeXt8auPBLV",
 
     
